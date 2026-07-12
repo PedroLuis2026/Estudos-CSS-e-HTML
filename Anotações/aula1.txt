@@ -1,0 +1,105 @@
+================================================================================
+RESUMO DE ESTUDOS - COMO A INTERNET CHEGA NA MINHA CASA?
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. ORIGEM HISTÓRICA: DA GUERRA FRIA À ARPANET
+--------------------------------------------------------------------------------
+- Contexto: Período de Guerra Fria (disputa ideológica e tecnológica entre os 
+  Estados Unidos e a União Soviética).
+- O Estopim: A União Soviética largou na frente na corrida tecnológica ao 
+  lançar o Sputnik, o primeiro satélite artificial. Isso gerou um enorme receio 
+  de espionagem por parte dos EUA.
+- Criação da ARPA: Diante disso, o presidente americano Dwight Eisenhower 
+  fundou a ARPA (Advanced Research Projects Agency), uma agência focada em 
+  desenvolver tecnologias estratégicas e militares.
+- O Problema do Backup: O governo americano temia que um ataque nuclear da URSS 
+  destruísse seus centros militares e apagasse todos os dados. Eles precisavam 
+  de uma rede para descentralizar e espelhar essas informações.
+- ARPANET (1969): Nasceu a primeira rede interconectada, ligando inicialmente 
+  4 pontos acadêmicos e militares estratégicos.
+
+2. A BARREIRA DA LINGUAGEM E O SURGIMENTO DO TCP/IP
+--------------------------------------------------------------------------------
+- O Conflito de Hardware: Os 4 primeiros nós da ARPANET usavam computadores de 
+  fabricantes totalmente diferentes (IBM, SDS, DEC). Naquela época, computadores 
+  de marcas diferentes falavam "idiomas" (sistemas) completamente incompatíveis.
+- O Protocolo NCP: Criado pela UCLA para funcionar como uma linguagem universal 
+  de comunicação entre as máquinas. 
+  * Limitação do NCP: Era muito primitivo. Se duas máquinas começassem a trocar 
+    dados, a rede inteira travava e as outras precisavam esperar a liberação.
+- A Solução Definitiva (1972): Com o crescimento da rede, dois pesquisadores 
+  desenvolveram protocolos que revolucionaram a comunicação:
+  * Vinton Cerf (Vint Cerf): Criou o IP (Internet Protocol), responsável por 
+    identificar individualmente cada máquina na rede.
+  * Robert Kahn (Bobby Kahn): Criou o TCP (Transmission Control Protocol), 
+    gerenciando a transmissão dos dados sem travar a infraestrutura.
+- O Combo TCP/IP: A união dessas duas tecnologias gerou a base da internet que 
+  utilizamos até hoje (atualmente evoluída para o padrão IPv6).
+
+3. O CONCEITO DE INTERNET E A INFRAESTRUTURA ATUAL
+--------------------------------------------------------------------------------
+- Expansão Intercontinental (1977): Ocorre a primeira conexão transatlântica 
+  via satélite da arpanet com a Universidade de Londres.
+- Fragmentação da Rede: Com o crescimento acelerado, os militares decidiram 
+  isolar seus dados em uma rede própria (MILNET). A parte científica/acadêmica 
+  passou para a NSFNET, abrindo as portas para redes comerciais paralelas.
+- Origem do Nome: A necessidade de interconectar todas essas redes diferentes 
+  gerou o termo "Interconnected Networking" -> "Internetworking" -> INTERNET.
+- Como ela se sustenta hoje: A comunicação global e intercontinental NÃO é 
+  feita majoritariamente por satélites, mas sim por CABOS SUBMARINOS de fibra 
+  ótica instalados no fundo dos oceanos. 
+  * As conexões internas (dentro dos países/cidades) utilizam satélites, 
+    antenas de celular e redes locais para distribuir o sinal até o interior.
+
+4. TRÁFEGO DE DADOS: CLIENTE VS SERVIDOR
+--------------------------------------------------------------------------------
+- Cliente (Ponto A): É o seu dispositivo (computador, celular) que solicita um 
+  serviço ou arquivo na rede.
+- Servidor (Ponto B): É a máquina remota de alta performance que armazena e 
+  disponibiliza os arquivos solicitados (ex: servidores do Google e YouTube).
+- Arquitetura de Pacotes: Enviar um arquivo grande por inteiro deixaria a rede 
+  mundial lenta. Por isso, o protocolo TCP/IP faz o seguinte:
+  1. O IP localiza exatamente onde o Servidor está.
+  2. O TCP do Servidor quebra o arquivo (como uma imagem ou vídeo) em vários 
+     pequenos "pacotes".
+  3. Esses pacotes viajam pela internet de forma independente, pegando rotas 
+     e tempos diferentes.
+  4. Ao chegarem no seu dispositivo, o seu TCP junta todos esses pedaços na 
+     ordem correta para reconstruir o arquivo original. 
+  * É por isso que, em conexões lentas, as imagens de um site carregam em 
+    "pedaços" progressivos.
+
+5. A EVOLUÇÃO VISUAL: DO TEXTO PARA A INTERNET GRÁFICA
+--------------------------------------------------------------------------------
+- Internet Antiga: Não existia interface gráfica, imagens integradas ou mouse. 
+  A navegação era feita em telas pretas com letras verdes ou brancas, usando 
+  apenas as setas do teclado.
+- Protocolo Gopher: Era a ferramenta padrão antiga para navegar por menus e 
+  links puramente textuais.
+- A Virada de Chave (1993): Em Genebra, Tim Berners-Lee desenvolve os três 
+  pilares modernos da web:
+  * HTTP (Hypertext Transfer Protocol): O protocolo de transferência de hipertextos.
+  * HTML (Hypertext Markup Language): A linguagem de marcação usada para construir 
+    as páginas e criar os textos com links clicáveis.
+  * WWW (World Wide Web): A rede mundial de computadores baseada nessa tecnologia.
+- Primeiro Navegador: Mark Andreessen cria o "Mosaic", o primeiro navegador 
+  gráfico capaz de ler HTML e exibir elementos visuais integrados na página.
+
+6. DIFERENÇA REAL: INTERNET VS WWW
+--------------------------------------------------------------------------------
+- INTERNET: É a estrutura física e global de conexão. É a "estrada", a grande 
+  rede de cabos e servidores espalhados pelo mundo.
+- WWW (World Wide Web): É uma SUB-REDE (um serviço) que roda dentro da Internet. 
+  Ela é composta especificamente pelos servidores que se comunicam via HTTP.
+- Outros Serviços na Estrada da Internet: Além da WWW, existem outros serviços 
+  e protocolos independentes trafegando na internet, como:
+  * FTP (Transferência pura de arquivos)
+  * SMTP / POP3 / IMAP (Serviços dedicados a e-mails)
+  * O antigo Gopher, entre outros.
+
+================================================================================
+RECOMENDAÇÃO DE COMPLEMENTO CITADA:
+- Série documental "Glad You Asked" (Vox/YouTube), no episódio que explica o 
+  funcionamento interno da internet, mostrando data centers e cabos submarinos.
+================================================================================
