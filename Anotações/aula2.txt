@@ -1,0 +1,99 @@
+================================================================================
+RESUMO DE ESTUDOS - COMO A INTERNET FUNCIONA?
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A REPRESENTAÇÃO DOS DADOS NO COMPUTADOR (BITS E BYTES)
+--------------------------------------------------------------------------------
+- O Computador não é inerentemente inteligente: Ele é, conforme uma analogia 
+  mencionada, "um burro muito rápido". A inteligência vem dos programadores.
+- Sinais Elétricos: Como equipamento eletrônico, o computador funciona apenas 
+  com dois estados de sinais elétricos (presença e ausência de sinal).
+- Ondas Quadradas: Fisicamente, são ondas com formato quadrado:
+  * Com sinal elétrico = Representado pelo dígito 1.
+  * Sem sinal elétrico = Representado pelo dígito 0.
+- Bit (Binary Digit): É a menor unidade de informação e assume apenas os estados 
+  0 ou 1.
+- Byte: É um conjunto agrupado de 8 bits. É a porção mínima para representar 
+  um caractere, letra ou informação utilizável na computação.
+  * Exemplo: Ao digitar a letra 'A', o teclado envia uma sequência exata de 
+    8 bits (como definido em tabelas de codificação como o UTF-8).
+  * O padrão UTF-8 (código multibyte) utiliza de 1 a 4 bytes para representar 
+    letras, acentos, símbolos e emojis.
+
+2. OS MÚLTIPLOS DO BYTE (POR QUE 1024?)
+--------------------------------------------------------------------------------
+- Diferente do sistema decimal humano (base 10, onde os prefixos "quilo" mudam 
+  de 1000 em 1000), a computação trabalha no sistema binário (base 2).
+- Referência Base 2: 2 elevado à potência de 10 (2^10) resulta em 1024. 
+  Portanto, as grandezas mudam a cada fator de 1024:
+  * 8 Bits = 1 Byte (B)
+  * 1024 Bytes = 1 Kilobyte (KB)
+  * 1024 KB = 1 Megabyte (MB)
+  * 1024 MB = 1 Gigabyte (GB)
+  * 1024 GB = 1 Terabyte (TB) [Padrão comum atual de armazenamento de HDs]
+  * 1024 TB = 1 Petabyte (PB)
+  * 1024 PB = 1 Exabyte (EB)
+  * 1024 EB = 1 Zettabyte (ZB)
+  * 1024 ZB = 1 Yottabyte (YB)
+
+3. DIFERENÇA CRUCIAL: BYTE (B MAIÚSCULO) VS BIT (B MINÚSCULO)
+--------------------------------------------------------------------------------
+- MB (B maiúsculo - Megabyte): Usado comercialmente e tecnicamente para medir 
+  capacidade de ARMAZENAMENTO.
+  * Exemplos: Pen drive de 16 GB, HD de 2 TB, Memória RAM de 8 GB.
+- Mb (b minúsculo - Megabit): Usado comercialmente e tecnicamente para medir 
+  velocidade de TRANSMISSÃO de dados (redes).
+  * Exemplos: Internet contratada de "60 Mega" (Megabits por segundo), placa 
+    de rede de 100 Mbps ou rede local de 1 Gbps (Gigabit).
+
+4. A INFRAESTRUTURA DE CONEXÃO: CLIENTE E SERVIDOR
+--------------------------------------------------------------------------------
+- Cliente: É o dispositivo final que solicita um recurso (seu computador, 
+  smartphone, smart TV ou tablet).
+- Servidor: É a máquina remota de alta performance que armazena os arquivos 
+  desejados (páginas HTML, fotos do Instagram, vídeos do YouTube).
+
+5. O QUE É E PARA QUE SERVE UM MODEM?
+--------------------------------------------------------------------------------
+- O Conflito de Sinais: 
+  * O computador (cliente) entende apenas Ondas Quadradas (sinal digital).
+  * A infraestrutura pública externa (cabos de telefone analógicos, cabos de 
+    TV ou antenas) transporta ondas arredondadas, chamadas de Ondas Senoidais.
+- A Solução: É necessário um hardware intermediário na sua casa para converter 
+  esses sinais:
+  * Converter Onda Quadrada para Onda Senoidal = MODULAÇÃO.
+  * Converter Onda Senoidal de volta para Onda Quadrada = DEMODULAÇÃO.
+- Origem do Termo MODEM: É a fusão de MOdulação + DEModulação.
+- Nota Técnica: Os aparelhos residenciais modernos acumulam a função de modem, 
+  roteador e switch (tecnicamente chamados de gateways).
+
+6. ENDEREÇAMENTO IP E O SISTEMA DE NOMES DE DOMÍNIO (DNS)
+--------------------------------------------------------------------------------
+- Endereço IP (Internet Protocol): Cada dispositivo conectado à internet possui 
+  uma identidade numérica única (ex: 201.17.81.22). Os servidores também possuem IPs.
+- O Problema: Humanos não conseguem decorar sequências numéricas mutáveis para 
+  acessar sites (além disso, o IP de um servidor como o do Instagram muda com 
+  frequência devido à distribuição de carga).
+- O Servidor DNS (Domain Name System): Funciona literalmente como a "agenda 
+  telefônica" da internet. Faz a ponte entre nomes de domínios e IPs numéricos.
+- O Fluxo de Acesso a um Site:
+  1. O usuário digita o domínio amigável (ex: `instagram.com`) no navegador.
+  2. O computador consulta primeiro um Servidor DNS.
+  3. O DNS pesquisa em seu banco de dados e responde com o IP numérico correto atual.
+  4. De posse do número do IP, o navegador finalmente faz a conexão direta com 
+     o servidor correspondente para baixar os dados empacotados.
+
+7. ROTAS E ROTEAMENTO DE PACOTES
+--------------------------------------------------------------------------------
+- A internet é uma malha descentralizada composta por caminhos virtuais infinitos.
+- Conforme visto no modelo TCP/IP, arquivos grandes são fatiados em pequenos pacotes.
+- Flexibilidade de Rota: Os pacotes que compõem uma única imagem ou arquivo não 
+  precisam viajar todos juntos pela mesma estrada.
+- Desvio de Tráfego: Equipamentos inteligentes (roteadores em Data Centers) 
+  analisam o tráfego em tempo real. Se um nó ou ponto da rede estiver fora do ar 
+  ou congestionado, o sistema joga os pacotes restantes por rotas alternativas.
+- Resultado: Pacotes podem pegar caminhos totalmente diferentes e bizarros e 
+  chegar em momentos distintos. O protocolo TCP no computador do cliente espera 
+  todos os pedaços chegarem e os reorganiza na ordem perfeita para exibição.
+================================================================================
