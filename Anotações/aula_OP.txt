@@ -1,0 +1,51 @@
+================================================================================
+RESUMO DE ESTUDOS - FRONT-END, BACK-END E FULL STACK
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. TECNOLOGIAS CLIENT-SIDE (O LADO DO CLIENTE / FRONT-END)
+--------------------------------------------------------------------------------
+- O Que É: São as tecnologias e linguagens que rodam diretamente no navegador 
+  do usuário final (Google Chrome, Firefox, Safari, no PC ou celular).
+- Papel do Servidor: Nesse modelo, o servidor apenas armazena e envia os 
+  arquivos puros. Ele não processa nada, quem faz o trabalho de interpretar 
+  o visual é a máquina do usuário.
+- O Desenvolvedor Front-End: É o profissional especializado no que o usuário 
+  vê e interage. O "palco" da aplicação.
+  * Tecnologias Essenciais: HTML, CSS e JavaScript (que roda no navegador).
+  * Outros Conhecimentos Desejáveis: UX (User Experience), noções de cores, 
+    tipografia e manipulação de imagens, embora não substitua a figura do 
+    Designer (que é quem planeja e desenha a interface antes do código).
+
+2. TECNOLOGIAS SERVER-SIDE (O LADO DO SERVIDOR / BACK-END)
+--------------------------------------------------------------------------------
+- O Problema do Site Estático: Um site 100% Client-Side é estático. Uma loja 
+  virtual, por exemplo, não pode depender de um humano mexendo no código HTML 
+  toda vez que uma camiseta for vendida ou mudar de preço.
+- O Que É: São linguagens e tecnologias que rodam "por trás das cortinas", 
+  dentro do Servidor e dos Bancos de Dados.
+- Fluxo Dinâmico: 
+  1. O cliente pede para acessar a página inicial da loja.
+  2. O servidor (através de uma linguagem Back-End) consulta o Banco de Dados.
+  3. Ele processa quais camisas estão no estoque, quais estão em promoção, etc.
+  4. O servidor "monta" o HTML de forma dinâmica e automática e envia essa 
+     página pronta para o Cliente.
+- O Desenvolvedor Back-End: Especializado em criar a lógica do servidor, a 
+  segurança e a manipulação dos bancos de dados.
+  * Linguagens Comuns: PHP, Python, Java, C#, Ruby, e o próprio JavaScript 
+    rodando no servidor (ex: Node.js).
+
+3. O DESENVOLVEDOR FULL STACK
+--------------------------------------------------------------------------------
+- O Que É: É o profissional que domina as duas "pilhas" (stacks) de tecnologia. 
+  Ele consegue desenvolver tanto a parte visual e interativa do cliente 
+  (Front-End) quanto a arquitetura, regras de negócio e banco de dados no 
+  servidor (Back-End).
+- A Realidade do Mercado: Se tornar um desenvolvedor Full Stack exige muita 
+  dedicação, muito estudo e, principalmente, muito TEMPO.
+- Alerta Crítico: O professor ressalta que deve-se desconfiar veementemente de 
+  promessas e cursos que garantem a formação de um profissional Full Stack (com 
+  altos salários imediatos) em poucas semanas ou poucos meses. Isso não existe e 
+  gera frustração.
+
+================================================================================

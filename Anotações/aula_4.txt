@@ -1,0 +1,81 @@
+================================================================================
+RESUMO DE ESTUDOS - A DIFERENÇA ENTRE HTML, CSS E JAVASCRIPT
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. SÃO LINGUAGENS DE PROGRAMAÇÃO?
+--------------------------------------------------------------------------------
+- HTML e CSS NÃO SÃO linguagens de programação.
+- O correto não é dizer "Eu programo em HTML/CSS", mas sim "Eu crio/desenvolvo 
+  sites com HTML e CSS".
+- Linguagens de programação (como JavaScript, PHP, Python, Java, C#) possuem 
+  lógica, repetição, variáveis e condições. HTML e CSS não possuem isso.
+
+2. A TRINDADE DA WEB (HTML, CSS E JAVASCRIPT)
+--------------------------------------------------------------------------------
+- HTML (HyperText Markup Language): É uma LINGUAGEM DE MARCAÇÃO focada em 
+  CONTEÚDO (textos, imagens, links, tabelas, etc.). Sem ele, não há site.
+- CSS (Cascading Style Sheets): É uma FOLHA DE ESTILOS focada em DESIGN e 
+  APARÊNCIA (cores, fontes, tamanhos, posicionamentos).
+- JavaScript (JS): Essa SIM é uma linguagem de programação. É focada em 
+  INTERATIVIDADE (menus que abrem, animações, validação de formulários, janelas 
+  pop-ups).
+
+3. ANATOMIA BÁSICA DE UMA TAG HTML
+--------------------------------------------------------------------------------
+- O HTML é escrito através de marcas chamadas "tags", delimitadas por 
+  colchetes angulares `< >`.
+- A maioria das tags precisa de ABERTURA e FECHAMENTO.
+  * Exemplo: `<h1>Título do site</h1>` (`<h1>` abre, `</h1>` fecha).
+  * Exemplo: `<p>Meu texto.</p>`
+- Tags sem fechamento: Algumas exceções não precisam fechar, como `<br>` 
+  (quebra de linha) e `<img>` (imagens).
+- Parâmetros e Valores: Algumas tags levam configurações extras dentro da 
+  tag de abertura. 
+  * Exemplo: `<img src="foto.png" alt="Exemplo de foto">` 
+    (`src` e `alt` são os parâmetros, `"foto.png"` e `"Exemplo de foto"` são os valores).
+
+4. ANATOMIA BÁSICA DE UMA REGRA CSS
+--------------------------------------------------------------------------------
+- O CSS usa "seletores" para apontar qual elemento do HTML deve ser estilizado.
+- Estrutura:
+  Seletor {
+      propriedade: valor;
+  }
+- Exemplo:
+  h1 {
+      font-family: Arial;
+      font-size: 20px;
+      color: blue;
+  }
+- Toda declaração no CSS termina obrigatoriamente com ponto e vírgula (`;`).
+
+5. ESTRUTURA BÁSICA OBRIGATÓRIA DE UM DOCUMENTO HTML5
+--------------------------------------------------------------------------------
+Todo arquivo HTML precisa ter esse "esqueleto" fundamental:
+
+<!DOCTYPE html>  -> Diz ao navegador que este arquivo é HTML5 atualizado.
+<html lang="pt-br"> -> Indica que a linguagem principal do conteúdo é Português do Brasil.
+  <head> -> Cabeça (Área de Configurações invisíveis ao usuário comum).
+    <meta charset="utf-8"> -> Permite o uso de acentos e c-cedilha (padrão UTF-8).
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Configura o tamanho da tela para ser responsivo/adaptável.
+    <title>Título na Aba do Navegador</title> -> Nome que aparece na aba.
+  </head>
+  <body> -> Corpo (Tudo o que fica visível na tela em branco do site).
+    </body>
+</html>
+
+6. O PAPEL DO NAVEGADOR (COMO TUDO FUNCIONA NA TELA)
+--------------------------------------------------------------------------------
+- Após o Cliente fazer a requisição de acesso e baixar os arquivos do Servidor, 
+  o navegador (Google Chrome, Firefox, Edge, etc.) assume o comando.
+- O navegador lê (analisa) o código HTML e as regras CSS linha por linha e 
+  "renderiza", transformando aqueles códigos de texto no resultado visual 
+  formatado e colorido que aparece na tela do usuário.
+
+================================================================================
+DICA DE FERRAMENTA DA AULA:
+- Extensão "Web Developer" no Google Chrome: Permite desligar separadamente 
+  o CSS e o JavaScript de qualquer site (como o Globo Esporte ou YouTube) 
+  para visualizar como eles ficam "crus" apenas com o conteúdo (HTML).
+================================================================================
