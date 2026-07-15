@@ -1,0 +1,52 @@
+================================================================================
+RESUMO DE ESTUDOS - SÍMBOLOS E EMOJIS NO SEU SITE
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O ERRO DOS ESPAÇAMENTOS VERTICAIS (GAMBIARRA COM <br>)
+--------------------------------------------------------------------------------
+- O Erro Comum: Muitos iniciantes, ao tentarem criar um grande espaço em branco 
+  entre um parágrafo e outro, colocam várias tags `<br>` seguidas (ex: `<br><br><br>`).
+- A Regra Profissional: NUNCA faça isso. A tag `<br>` serve apenas para quebrar 
+  uma linha no fluxo do texto. Se você precisa de afastamento (margens e espaços 
+  verticais), isso DEVE ser feito através do CSS (usando propriedades como 
+  `margin` ou `padding`), nunca enchendo o HTML de quebras.
+
+2. INSERINDO COMENTÁRIOS NO CÓDIGO HTML
+--------------------------------------------------------------------------------
+- Para adicionar anotações que fiquem visíveis apenas no código (para o 
+  desenvolvedor) e não apareçam no site final, utilizamos comentários.
+- A sintaxe de comentário no HTML é: ``
+- Tudo o que estiver dentro dessas marcas será completamente ignorado pelo 
+  navegador.
+
+3. INSERINDO SÍMBOLOS ESPECIAIS E MOEDAS
+--------------------------------------------------------------------------------
+Como visto na aula anterior, o HTML possui as Character Entities. Abaixo estão 
+alguns exemplos de símbolos comuns:
+Sintaxe padrão: Começa com `&` e termina com `;`.
+
+- Direitos Autorais / Marcas:
+  * `&reg;` = Marca Registrada (®)
+  * `&copy;` = Copyright (©)
+  * `&trade;` = Trade Mark (™)
+
+- Moedas Internacionais:
+  * `&euro;` = Euro (€)
+  * `&pound;` = Libra (£)
+  * `&yen;` = Iene (¥)
+  * `&cent;` = Centavo (¢)
+
+- Letras Gregas / Símbolos Matemáticos:
+  * `&Delta;` (D maiúsculo) = Delta maiúsculo (Δ)
+  * `&delta;` (d minúsculo) = Delta minúsculo (δ)
+
+- Setas (Arrows):
+  * `&uarr;` = Seta para cima (↑)
+  * `&darr;` = Seta para baixo (↓)
+  * `&larr;` = Seta para esquerda (←)
+  * `&rarr;` = Seta para direita (→)
+
+4. INSERINDO EMOJIS NO SEU SITE
+--------------------------------------------------------------------------------
+- Para adicionar emojis de

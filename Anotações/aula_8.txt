@@ -1,0 +1,50 @@
+================================================================================
+RESUMO DE ESTUDOS - DIREITOS AUTORAIS DE IMAGENS
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O PROBLEMA DE COPIAR IMAGENS DO GOOGLE
+--------------------------------------------------------------------------------
+- O Hábito Errado: É muito comum pesquisar imagens no Google e copiá-las 
+  diretamente para usar em trabalhos escolares ou projetos pessoais.
+- O Risco Profissional: Embora isso não traga problemas na escola, ao 
+  desenvolver sites profissionais e comerciais, utilizar imagens sem autorização 
+  fere a lei de Direitos Autorais e pode render processos severos aos seus 
+  clientes (e a você).
+
+2. COMO BUSCAR IMAGENS LIVRES DE DIREITOS NO GOOGLE
+--------------------------------------------------------------------------------
+Se você precisar usar o Google Imagens, utilize os filtros de licença:
+1. Faça a sua pesquisa normalmente (ex: "pessoa estudando").
+2. Clique no botão "Ferramentas" (logo abaixo da barra de pesquisa).
+3. Clique em "Direitos de Uso".
+4. Selecione a opção "Marcadas para reutilização com modificação". 
+   (Essa é a licença mais abrangente, permitindo uso comercial e alterações na 
+   imagem).
+
+3. BANCOS DE IMAGENS GRATUITOS (A MELHOR OPÇÃO)
+--------------------------------------------------------------------------------
+Em vez de depender do Google, profissionais utilizam bancos de imagens onde 
+fotógrafos disponibilizam seus trabalhos de forma gratuita e livre de direitos 
+autorais.
+Os sites recomendados na aula são:
+
+- Unsplash (unsplash.com)
+- Pexels (pexels.com)
+- Pixabay (pixabay.com)
+- Wikimedia Commons (commons.wikimedia.org)
+
+*Dica Importante: As buscas nesses sites funcionam muito melhor em inglês 
+(ex: em vez de "pessoa estudando", busque por "person studying"). Use o Google 
+Tradutor caso tenha dificuldades.
+
+4. PREPARAÇÃO PARA A PRÓXIMA AULA (INSTALAÇÃO DO GIMP)
+--------------------------------------------------------------------------------
+- O Desafio: Desenvolvedores precisam manipular, cortar e redimensionar imagens 
+  antes de colocá-las no site.
+- O Software: Em vez de piratear o Photoshop (o que é contra a ética e a lei), 
+  o professor recomenda utilizar o GIMP.
+- O que é o GIMP: É um software Open Source (código aberto), 100% legal, 
+  gratuito e profissional para manipulação e edição de imagens, disponível 
+  para Windows, Linux e macOS.
+================================================================================

@@ -1,0 +1,47 @@
+================================================================================
+RESUMO DE ESTUDOS - PARÁGRAFOS E QUEBRAS
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. FLUXO DE TEXTO E PARÁGRAFOS (<p>)
+--------------------------------------------------------------------------------
+- O Comportamento do Navegador: O HTML é estritamente uma linguagem de marcação. 
+  Isso significa que o navegador só obedece às "tags", ignorando a formatação 
+  visual de como você digitou no editor de código.
+- Quebras Invisíveis: Se você der vários "ENTERS" ou múltiplos espaços no meio 
+  do seu texto no VS Code, o navegador irá ignorá-los completamente e renderizará 
+  tudo na mesma linha de forma contínua. 
+- A regra é clara: Para o navegador, o fim de um parágrafo só acontece quando 
+  ele encontra a marcação de fechamento `</p>`.
+
+2. COMO FORÇAR UMA QUEBRA DE LINHA (<br>)
+--------------------------------------------------------------------------------
+- Para quebrar um texto de propósito no meio de um parágrafo e jogá-lo para a 
+  linha de baixo, utiliza-se a tag `<br>` (Break Row).
+- Nota importante: A tag `<br>` é uma tag isolada. Ela não precisa e não possui 
+  tag de fechamento (não existe `</br>`). Basta inseri-la exatamente no local 
+  onde você quer que o texto "caia" para a linha inferior.
+
+3. EXIBINDO SÍMBOLOS ESPECIAIS (HTML ENTITIES)
+--------------------------------------------------------------------------------
+- O Problema: Se você quiser escrever um texto didático no seu site mostrando a 
+  palavra "<br>" ou "<p>", o navegador vai interpretar os sinais de "menor que" 
+  e "maior que" como código real, escondendo-os da tela e executando o comando.
+- A Solução: Para mostrar os colchetes angulares VISUALMENTE no site, usamos as 
+  Entidades HTML (Character Entities), que sempre começam com `&` e terminam 
+  com `;`.
+  * `&lt;` (Less Than) = Exibe visualmente o símbolo `<`
+  * `&gt;` (Greater Than) = Exibe visualmente o símbolo `>`
+- Exemplo prático: Para que o usuário leia "<br>" escrito na tela, você deve 
+  digitar no seu código HTML: `&lt;br&gt;`.
+
+4. DICAS DE BOAS PRÁTICAS DA AULA
+--------------------------------------------------------------------------------
+- Pastas de Exercício: Crie sempre uma nova pasta isolada para cada exercício 
+  (ex: ex002) para manter os estudos organizados.
+- Nomes de Arquivo: NUNCA utilize espaços ou letras maiúsculas ao nomear um 
+  arquivo principal. O correto é sempre `index.html` (tudo minúsculo).
+- Produtividade: Utilize a abreviação do Emmet (digitando `!` + ENTER no VS Code) 
+  para gerar toda a estrutura básica obrigatória do seu documento HTML5 em um 
+  segundo.
+================================================================================

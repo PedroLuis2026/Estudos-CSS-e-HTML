@@ -1,0 +1,65 @@
+================================================================================
+RESUMO DE ESTUDOS - SEU PRIMEIRO CÓDIGO HTML
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A IMPORTÂNCIA DA ORGANIZAÇÃO DE PASTAS
+--------------------------------------------------------------------------------
+- Um bom programador precisa ser organizado. O recomendado é criar uma estrutura 
+  de pastas limpa para não perder os arquivos com o tempo.
+- Estrutura sugerida na aula:
+  Documentos > estudos > HTML CSS > exercicios > ex001
+- Dica de Produtividade (Windows): Para abrir o Explorador de Arquivos 
+  rapidamente, pressione a tecla [Windows] + [E].
+- Para abrir o projeto no editor: Clique com o botão direito na pasta do 
+  exercício (ex001) e selecione "Abrir com Code" (Open with Code).
+
+2. CRIANDO O PRIMEIRO ARQUIVO
+--------------------------------------------------------------------------------
+- Dentro do VS Code, crie um novo arquivo chamado `index.html`.
+  * Regra: Tudo em letras minúsculas, sem espaços e obrigatoriamente com a 
+    extensão `.html` no final.
+- Atalho Ninja (Emmet): Para gerar toda a estrutura básica do HTML5 sem 
+  precisar digitar linha por linha, digite o ponto de exclamação `!` e 
+  pressione [ENTER].
+
+3. ANATOMIA DA ESTRUTURA BÁSICA DO HTML GERADA
+--------------------------------------------------------------------------------
+- `<!DOCTYPE html>`: Informa ao navegador que estamos utilizando a versão mais 
+  recente da linguagem, o HTML5.
+- `<html lang="pt-br">`: Tag principal que envolve o site inteiro. O parâmetro 
+  `lang` informa que o idioma padrão do site é o Português do Brasil.
+- `<head>`: A "cabeça" do site. Área destinada para configurações que o 
+  navegador lê, mas que geralmente não aparecem na tela branca para o usuário.
+- `<meta charset="UTF-8">`: Extremamente importante para o idioma português. 
+  Garante que o site reconheça e exiba corretamente acentuações (á, é, í) e 
+  o c-cedilha (ç). Sem isso, as letras ficam com símbolos quebrados.
+- `<meta name="viewport" ...>`: Configuração para que o site ocupe 100% da 
+  escala da tela (preparação básica para sites responsivos em celulares).
+- `<title>`: Define o título que vai aparecer na abinha superior do navegador.
+- `<body>`: O "corpo" do site. Tudo o que você colocar aqui aparecerá na tela 
+  branca para o visitante.
+
+4. PRIMEIRAS TAGS DE CONTEÚDO APRENDIDAS
+--------------------------------------------------------------------------------
+- `<h1>`: Heading 1 (Título nível 1). Usado para criar o título principal da 
+  página. O professor alerta: H1 não significa "texto com letra grande", mas 
+  sim uma marcação de relevância (Título).
+- `<p>`: Paragraph (Parágrafo). Usado para envolver blocos de texto comuns.
+- `<hr>`: Horizontal Rule (Linha Horizontal). Cria um traço na tela para 
+  separar conteúdos. Detalhe: É uma tag isolada, ou seja, NÃO possui tag de 
+  fechamento (não existe `</hr>`).
+
+5. DICAS DE USO DO VS CODE E NAVEGADOR
+--------------------------------------------------------------------------------
+- A maldição do "Olá, Mundo!": Na programação, diz a lenda que o primeiro 
+  código escrito ao aprender uma nova linguagem deve exibir a frase "Olá, Mundo", 
+  caso contrário, as coisas não darão certo.
+- Split Screen (Tela Dividida): No Windows, você pode arrastar a janela do 
+  navegador para o extremo direito e a do VS Code para o extremo esquerdo. 
+  Isso gruda as janelas, permitindo programar de um lado e ver o resultado do 
+  outro simultaneamente.
+- Atualização Visual: Sempre que escrever um código novo no VS Code, lembre-se 
+  de que ele precisa ser salvo, e a página do navegador precisa ser atualizada 
+  (pressionando F5) para que as modificações apareçam.
+================================================================================
