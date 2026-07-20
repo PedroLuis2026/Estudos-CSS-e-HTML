@@ -1,0 +1,59 @@
+================================================================================
+RESUMO DE ESTUDOS - FORMATAÇÕES ADICIONAIS EM HTML
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. TEXTO MARCADO (EFEITO MARCA-TEXTO)
+--------------------------------------------------------------------------------
+- Tag utilizada: `<mark>`
+- Efeito Visual: Cria um fundo ao redor da palavra/frase selecionada, similar a 
+  um marca-texto fluorescente (o padrão na maioria dos navegadores é amarelo).
+- Alterando a cor: Para mudar a cor da marcação, você precisará usar CSS, pois 
+  cor é forma. 
+  * Exemplo de estilo direto na tag (Inline CSS): 
+    `<mark style="background-color: lime;">texto</mark>`
+  * No entanto, a melhor prática é usar seletores CSS no `<head>` (tag `<style>`) 
+    para não ter que alterar tag por tag.
+
+2. TEXTO GRANDE E TEXTO PEQUENO
+--------------------------------------------------------------------------------
+- Texto Pequeno (Semântico e Atual): Tag `<small>`
+  * O que faz: Diminui ligeiramente o tamanho da fonte.
+  * Uso semântico: Representa "letras miúdas" em contratos, observações de 
+    rodapé ou avisos legais (textos de menor relevância, mas que precisam 
+    estar na página).
+    
+- Texto Grande (Obsoleto): Tag `<big>`
+  * O que faz: Aumentaria o tamanho do texto.
+  * Por que está obsoleto? A W3C considerou que aumentar a letra sem um motivo 
+    estrutural é apenas uma função de design (forma), e portanto deve ser 
+    feito apenas com CSS.
+
+3. TEXTO EXCLUÍDO (DELETADO) E TEXTO INSERIDO
+--------------------------------------------------------------------------------
+Estas tags dão sentido histórico ou de revisão ao documento:
+
+- Texto Excluído: Tag `<del>`
+  * Efeito Visual: A palavra fica riscada no meio (tachada).
+  * Significado: Indica um texto que deve ser lido, mas não considerado mais 
+    (ex: um preço antigo que foi cortado em uma loja virtual ou um trecho 
+    revisado de um artigo).
+
+- Texto Inserido: Tag `<ins>`
+  * Efeito Visual: A palavra fica sublinhada.
+  * Significado: Indica um texto que foi adicionado depois. Semelhante ao 
+    funcionamento do sublinhado antigo, mas com um significado semântico 
+    de adição/preenchimento, e não apenas estético como a finada tag `<u>`.
+
+4. TEXTO SOBRESCRITO E SUBSCRITO
+--------------------------------------------------------------------------------
+Muito úteis para fórmulas matemáticas e químicas:
+
+- Texto Sobrescrito: Tag `<sup>` (Super)
+  * O que faz: Coloca o texto menor e alinhado na parte SUPERIOR.
+  * Exemplo de uso: Potências em matemática (ex: `X<sup>20</sup>` para X²º).
+
+- Texto Subscrito: Tag `<sub>` (Sub)
+  * O que faz: Coloca o texto menor e alinhado na parte INFERIOR.
+  * Exemplo de uso: Fórmulas químicas (ex: `H<sub>2</sub>O` para H₂O).
+================================================================================

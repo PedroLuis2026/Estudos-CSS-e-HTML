@@ -1,0 +1,67 @@
+================================================================================
+RESUMO DE ESTUDOS - CITAÇÕES E CÓDIGOS EM HTML5
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. FORMATAÇÃO DE CÓDIGO FONTE (Tags <code> e <pre>)
+--------------------------------------------------------------------------------
+- O Problema: Ao tentar exibir trechos de código (como Python, JavaScript, etc.) 
+  dentro de um parágrafo normal `<p>`, o navegador usa uma fonte de largura 
+  variável (onde o "l" ocupa menos espaço que o "w") e ignora espaços extras 
+  e quebras de linha (indentação). Isso deixa o código ilegível.
+
+- A Tag `<code>`:
+  * Transforma a fonte do texto em uma fonte monoespaçada (onde todas as 
+    letras ocupam a mesma largura), ideal para códigos.
+  * Por si só, a tag `<code>` AINDA IGNORA as quebras de linha e a indentação 
+    do código.
+
+- A Tag `<pre>` (Pré-formatado):
+  * Tudo o que for colocado dentro da tag `<pre>` será renderizado pelo navegador 
+    EXATAMENTE como foi digitado no editor, respeitando rigorosamente cada 
+    espaço, tabulação e quebra de linha.
+
+- A Solução Perfeita: Para exibir blocos de código em seu site, você deve 
+  "envelopar" o código unindo as duas tags. Coloque a tag `<code>` DENTRO 
+  da tag `<pre>`.
+  * Dica VS Code: Para alinhar o código de volta para a margem esquerda sem 
+    perder a indentação, selecione o bloco e pressione `Shift + Tab`.
+
+2. CITAÇÕES SIMPLES E EM BLOCO
+--------------------------------------------------------------------------------
+Se o seu texto referencia a fala ou o texto de outro autor, o HTML5 possui 
+tags semânticas específicas para isso, em vez de simplesmente digitar aspas ("").
+
+- Citação Simples (Tag `<q>` - Quote):
+  * Usada para citações curtas que ficam NA MESMA LINHA do parágrafo.
+  * O próprio navegador se encarrega de colocar as aspas automaticamente ao 
+    redor do texto envelopado pela tag `<q>`.
+
+- Citação em Bloco (Tag `<blockquote>`):
+  * Usada para citações longas que precisam quebrar a linha.
+  * O navegador cria um recuo (deslocamento horizontal para a direita) 
+    separando a citação do texto normal.
+  * Atributo `cite=""`: Dentro da tag `<blockquote>` (e também na `<q>`), você 
+    pode adicionar o atributo `cite="URL_DA_FONTE"` para colocar o link de 
+    onde a citação foi tirada. Isso não cria um link clicável, mas é lido pelos 
+    motores de busca (Google) por questões de direitos autorais e semântica.
+
+3. ABREVIAÇÕES E SIGLAS (Tag <abbr>)
+--------------------------------------------------------------------------------
+- Para explicar siglas no seu site (ex: HTML, CSS, ONU, IBGE), envolva a 
+  sigla com a tag `<abbr>`.
+- O Segredo: Use o atributo `title=""` dentro da tag `<abbr>`. 
+  Ex: `<abbr title="HyperText Markup Language">HTML</abbr>`.
+- Efeito: A palavra fica com um sublinhado pontilhado. Quando o usuário passa 
+  o mouse por cima (hover), um pequeno balão surge mostrando o significado 
+  inteiro (o texto que você colocou no `title`).
+
+4. TEXTO INVERTIDO (A Tag Inútil: <bdo>)
+--------------------------------------------------------------------------------
+- BDO significa Bi-Directional Override.
+- Ela inverte a direção da leitura do texto.
+- Possui o atributo obrigatório `dir=""` (Direction).
+  * `dir="rtl"` (Right To Left): Escreve o texto de trás para frente (da 
+    direita para a esquerda).
+  * `dir="ltr"` (Left To Right): Padrão ocidental normal.
+================================================================================

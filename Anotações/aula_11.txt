@@ -1,0 +1,53 @@
+================================================================================
+RESUMO DE ESTUDOS - A TAG IMG EM HTML5
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A TAG BÁSICA PARA INSERIR IMAGENS (<img>)
+--------------------------------------------------------------------------------
+- Para inserir imagens num site, utilizamos a tag `<img>` (image).
+- Esta é uma tag isolada, ou seja, NÃO possui tag de fechamento (não se usa `</img>`).
+- A tag `<img>` depende de dois atributos (parâmetros) fundamentais:
+  1. `src` (source/origem): Indica o caminho onde a imagem está guardada.
+  2. `alt` (alternative text): Define um texto alternativo para a imagem.
+
+2. O TEXTO ALTERNATIVO (Atributo alt)
+--------------------------------------------------------------------------------
+- O atributo `alt` é obrigatório pelas regras da W3C para garantir acessibilidade.
+- Função 1 (Acessibilidade): Leitores de tela para deficientes visuais lerão o 
+  texto contido no `alt` para descrever a imagem ao usuário.
+- Função 2 (Falha no carregamento): Se a internet estiver muito lenta ou se o 
+  caminho da imagem quebrar, o navegador mostrará o texto do `alt` no lugar 
+  da imagem.
+
+3. FORMAS DE CARREGAR IMAGENS NO HTML
+--------------------------------------------------------------------------------
+Existem três cenários principais para apontar o caminho da imagem no atributo `src`:
+
+- CENÁRIO 1: A imagem está na mesma pasta do arquivo HTML
+  * Sintaxe: `<img src="logo-html.png" alt="Logo do HTML5">`
+  * Dica no VS Code: Pressione `Ctrl + Espaço` dentro das aspas do `src` para 
+    ver a lista de arquivos disponíveis na pasta e evitar erros de digitação.
+
+- CENÁRIO 2: A imagem está numa subpasta (ex: pasta "imagens")
+  * Para organizar o projeto, é comum colocar todas as fotos dentro de uma 
+    pasta específica, separada do arquivo index.html.
+  * Sintaxe: `<img src="imagens/logo-css.png" alt="Logo do CSS3">`
+  * O navegador entende que deve primeiro entrar na pasta "imagens" (/) e 
+    depois carregar o arquivo.
+
+- CENÁRIO 3: Carregando imagens via URL Externa (Outros sites)
+  * É possível copiar o endereço (URL) de uma imagem hospedada em outro site 
+    e colar no seu projeto.
+  * Sintaxe: `<img src="https://site-externo.com/logo-javascript.png" alt="Logo do JavaScript">`
+  * Perigo desta técnica: Se o dono do site externo apagar a foto ou o 
+    servidor dele sair do ar, a imagem "quebrará" (sumirá) do seu site também.
+
+4. BOAS PRÁTICAS DA AULA
+--------------------------------------------------------------------------------
+- Sempre renomeie suas imagens utilizando apenas letras minúsculas, sem espaços 
+  e sem acentos (ex: `logo-css.png` em vez de `Logo CSS!.png`).
+- Redimensione fisicamente o arquivo da imagem em um editor (como o GIMP) 
+  ANTES de colocá-lo no código HTML, para garantir que o seu site seja leve 
+  e carregue rápido, consumindo menos banda do servidor.
+================================================================================

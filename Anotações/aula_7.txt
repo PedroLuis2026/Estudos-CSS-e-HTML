@@ -49,4 +49,24 @@ Sintaxe padrão: Começa com `&` e termina com `;`.
 
 4. INSERINDO EMOJIS NO SEU SITE
 --------------------------------------------------------------------------------
-- Para adicionar emojis de
+- Para adicionar emojis de forma profissional e que funcione bem nos navegadores:
+  1. Acesse o site oficial: emojipedia.org
+  2. Pesquise e escolha o emoji desejado.
+  3. Role a página para baixo até encontrar a sessão "Codepoints" e pegue o 
+     código hexadecimal correspondente. 
+     (Exemplo: O código é `U+1F596`, você deve focar apenas no `1F596`).
+  
+- A Sintaxe no HTML:
+  Para adicionar o emoji no código, use a regra:
+  `&#x` + `CÓDIGO_DO_EMOJI` + `;`
+
+- Exemplo prático do vídeo:
+  * Emoji Saudação Vulcana: `&#x1F596;` (🖖)
+  * Emoji Nerd de Óculos: `&#x1F913;` (🤓)
+
+================================================================================
+DICA IMPORTANTE DO PROFESSOR:
+Não assista aos vídeos passivamente (com os braços cruzados como se fosse 
+uma série da Netflix). Abra o Visual Studio Code, faça os testes digitando 
+os códigos com as próprias mãos e anote os atalhos.
+================================================================================

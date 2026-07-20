@@ -1,0 +1,63 @@
+================================================================================
+RESUMO DE ESTUDOS - NEGRITO E ITÁLICO DO JEITO CERTO
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A DIFERENÇA ENTRE FORMA E SIGNIFICADO (SEMÂNTICA)
+--------------------------------------------------------------------------------
+A aula reforça o conceito central do HTML5: as tags devem ter significado, 
+não apenas alterar o formato visual da letra. Se você quiser alterar apenas 
+a estética do texto, deve usar o CSS, e não o HTML.
+
+2. NEGRITO (DESTAQUE / FORTE)
+--------------------------------------------------------------------------------
+Existem duas formas de colocar um texto em negrito, mas apenas uma é a 
+correta (semântica) nos dias de hoje:
+
+- Forma Não-Semântica (Antiga): Tag `<b>` (Bold).
+  * O que faz: Deixa o texto em negrito, mas não informa ao navegador ou 
+    aos leitores de tela que aquela palavra é importante. É puramente estético.
+  * Uso recomendado: Evitar. Embora ainda funcione, é uma prática que pode se 
+    tornar obsoleta.
+
+- Forma Semântica (Atual): Tag `<strong>`.
+  * O que faz: Visualmente, também deixa o texto em negrito. No entanto, o 
+    seu propósito é dar PESO e IMPORTÂNCIA (Destaque Forte) para a palavra 
+    dentro da frase.
+  * Uso recomendado: Sempre utilizar esta tag quando quiser destacar algo com 
+    forte relevância no texto.
+
+3. ITÁLICO (ÊNFASE)
+--------------------------------------------------------------------------------
+Assim como no negrito, há duas abordagens para o texto inclinado:
+
+- Forma Não-Semântica (Antiga): Tag `<i>` (Italic).
+  * O que faz: Deixa o texto inclinado. Não possui significado especial.
+  * Uso recomendado: Evitar. (Na regra estrita, a W3C diz que `<i>` serve para 
+    palavras em idioma estrangeiro ou termos técnicos, mas para ênfase, há uma 
+    tag melhor).
+
+- Forma Semântica (Atual): Tag `<em>` (Emphasis).
+  * O que faz: Visualmente, deixa o texto em itálico. Semanticamente, indica 
+    ao navegador e leitores de tela que aquele termo tem uma ÊNFASE especial 
+    na entonação da leitura da frase.
+  * Uso recomendado: Sempre utilizar esta tag quando quiser dar ênfase a uma 
+    palavra ou expressão.
+
+4. DICA DE PRODUTIVIDADE NO VS CODE (ENVELOPAMENTO RÁPIDO)
+--------------------------------------------------------------------------------
+Quando você já digitou uma frase e esqueceu de colocar a tag de formatação, 
+você não precisa apagar ou arrastar a palavra. Use o atalho de envelopamento 
+do Emmet:
+
+1. Selecione a palavra ou frase que deseja colocar a tag.
+2. Pressione: `Ctrl + Shift + P` (Para abrir a Paleta de Comandos).
+3. Digite "wrap" ou "abbreviation" e selecione a opção: 
+   "Emmet: Envelopar com Abreviatura" (Wrap with Abbreviation).
+   * Dica: Depois da primeira vez, esse comando ficará no topo da lista, 
+     bastando apertar ENTER.
+4. Uma pequena caixa aparecerá. Digite o nome da tag desejada (ex: `strong`, 
+   `em`, `p`) SEM OS SINAIS DE MAIOR/MENOR.
+5. Pressione `ENTER`. O VS Code irá automaticamente abrir e fechar a tag 
+   ao redor do texto selecionado.
+================================================================================

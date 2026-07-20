@@ -1,0 +1,59 @@
+================================================================================
+RESUMO DE ESTUDOS - FORMATOS DE IMAGENS NA WEB
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. OS PRINCIPAIS FORMATOS DE IMAGEM PARA A WEB
+--------------------------------------------------------------------------------
+Atualmente, no desenvolvimento web, os formatos mais utilizados são JPEG (ou JPG) 
+e PNG. Existem outros formatos como GIF e SVG, mas o foco inicial deve ser em 
+dominar as diferenças cruciais entre JPEG e PNG para escolher o certo em cada caso.
+
+2. FORMATO JPEG (.jpg ou .jpeg)
+--------------------------------------------------------------------------------
+- O que é: Criado em 1983, é um formato projetado para ter um ALTO PODER DE 
+  COMPACTAÇÃO. 
+- Como funciona: Uma imagem digital é formada por milhões de pontos (pixels). 
+  O JPEG reduz o tamanho do arquivo ao mesclar cores semelhantes, diminuindo 
+  a quantidade de informações que precisam ser salvas.
+- Vantagem: Gera arquivos muito mais leves (tamanho em Kilobytes/Megabytes), 
+  sendo ideal para o carregamento rápido de sites.
+- Desvantagem: Sofre perda de qualidade. Se você der muito zoom ou compactar 
+  demais, a imagem ficará "quadriculada" (pixelada) e borrada.
+- Uso ideal: Fotografias, paisagens, texturas complexas e imagens de fundo 
+  (backgrounds) muito grandes, onde a leveza é mais importante que a nitidez 
+  milimétrica.
+- Limitação: O formato JPEG NÃO suporta fundos transparentes. Todo JPEG será 
+  um bloco quadrado ou retangular sólido.
+
+3. FORMATO PNG (.png)
+--------------------------------------------------------------------------------
+- O que é: Portable Network Graphics, criado em 1996 pela W3C para substituir 
+  o GIF.
+- Vantagem principal: Permite TRANSPARÊNCIA (Canal Alpha). Você pode salvar uma 
+  logomarca sem aquele fundo branco quadrado, permitindo que ela se sobreponha 
+  perfeitamente a qualquer cor de fundo do seu site.
+- Qualidade: Possui compressão "Lossless" (sem perda de qualidade). Os traços, 
+  textos e bordas ficam muito mais nítidos do que no JPEG.
+- Desvantagem: Gera arquivos mais pesados. Uma paisagem salva em PNG pode ter 
+  o dobro ou o triplo do peso da mesma paisagem em JPEG.
+- Uso ideal: Logotipos, ícones, ilustrações chapadas e imagens que necessitem 
+  flutuar na tela com fundo transparente.
+
+4. FORMATO GIF (.gif)
+--------------------------------------------------------------------------------
+- Formato antigo, com baixíssima qualidade de cores, que se popularizou 
+  novamente devido ao suporte a ANIMAÇÕES curtas (stickers e memes).
+- Permite transparência, mas de qualidade inferior ao PNG.
+
+5. DICAS PRÁTICAS DO PROFESSOR (PESQUISANDO NO GOOGLE)
+--------------------------------------------------------------------------------
+- Buscar Transparência: No Google Imagens, vá em Ferramentas > Cor > "Transparente" 
+  para encontrar logotipos e ilustrações em formato PNG sem fundo.
+- Cuidado com o "Falso PNG": Alguns sites colocam imagens JPEG que possuem 
+  quadradinhos cinzas e brancos desenhados ao fundo. Isso é uma falsa 
+  transparência e não funcionará no seu site.
+- Nunca use nomes com espaços, acentos ou letras maiúsculas ao salvar os arquivos 
+  de imagem no computador (ex: use "logo-faetec.png" em vez de "Logo FAETEC .png").
+
+================================================================================

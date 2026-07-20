@@ -1,0 +1,57 @@
+================================================================================
+RESUMO DE ESTUDOS - COMO MUDAR O FAVICON DE UM SITE
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O QUE É UM FAVICON?
+--------------------------------------------------------------------------------
+- O termo Favicon vem de "Favorite Icon" (Ícone de Favoritos).
+- É aquele pequeno logotipo ou símbolo que aparece na aba superior do navegador, 
+  ao lado do título (a tag `<title>`) da sua página, bem como na lista de 
+  sites favoritos gravados pelo usuário.
+- Se você não configurar um Favicon, o navegador exibirá um ícone genérico 
+  padrão (geralmente um globo terrestre, uma folha em branco ou o logo do XAMPP).
+
+2. FORMATOS RECOMENDADOS PARA O FAVICON
+--------------------------------------------------------------------------------
+- Embora os navegadores modernos suportem Favicons nos formatos `.png`, `.gif` e 
+  `.jpg`, o formato clássico, mais leve e que oferece 100% de compatibilidade 
+  com qualquer navegador e sistema operacional antigo é o formato `.ico`.
+- O tamanho clássico de um Favicon é um quadrado perfeito muito pequeno, 
+  geralmente de 16x16 ou 32x32 pixels.
+
+3. COMO CRIAR/BAIXAR SEU PRÓPRIO ARQUIVO .ICO
+--------------------------------------------------------------------------------
+A aula mostra várias abordagens gratuitas para obter o arquivo do Favicon:
+- Opção 1 (Baixar Pronto): Acessar o site `iconarchive.com`, pesquisar pelo 
+  tema e baixar a imagem já no formato ".ico".
+- Opção 2 (Desenhar do Zero em Pixel Art): Acessar o site `favicon.cc`, 
+  onde você pode desenhar seu ícone quadrinho por quadrinho (pixel a pixel) 
+  e depois fazer o download.
+- Opção 3 (Gerador Avançado): Acessar o site `favicon.io`. Lá você pode:
+  * Gerar um Favicon baseado em textos/iniciais (com fundos e bordas).
+  * Gerar um Favicon a partir de qualquer Emoji.
+  * Fazer o upload do seu próprio logotipo transparente (.png) para que o 
+    sistema o converta automaticamente num pacote de ícones `.ico`.
+
+4. COMO INSERIR O FAVICON NO CÓDIGO HTML (<link>)
+--------------------------------------------------------------------------------
+- O Favicon NÃO vai dentro do `<body>`. Sendo uma configuração do site para 
+  o navegador, ele deve ser colocado dentro do `<head>`.
+- A tag utilizada é a tag `<link>`.
+- A Sintaxe:
+  `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">`
+  
+  * `rel="shortcut icon"`: Indica a relação (o que este link significa).
+  * `href="..."`: É o caminho (Hypertext REFerence) apontando onde está o arquivo.
+  * `type="..."`: Declara o formato (MIME type) para o navegador saber o que esperar.
+
+5. DICA DE PRODUTIVIDADE COM EMMET (VS CODE)
+--------------------------------------------------------------------------------
+- Dentro da tag `<head>`, digite apenas as letras `link:favicon`.
+- Pressione [ENTER] (ou clique na sugestão do VS Code).
+- O editor escreverá toda a linha de código automaticamente. Em seguida, basta 
+  apagar o nome sugerido, apertar `Ctrl + Espaço` dentro das aspas do `href` e 
+  selecionar o arquivo `.ico` correspondente na sua pasta de exercícios.
+
+================================================================================

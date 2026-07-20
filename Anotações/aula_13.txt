@@ -1,0 +1,47 @@
+================================================================================
+RESUMO DE ESTUDOS - HIERARQUIA DE TÍTULOS
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O CONCEITO DE HIERARQUIA (NÃO É APENAS TAMANHO)
+--------------------------------------------------------------------------------
+- O Erro Comum: Muitos iniciantes aprendem que `<h1>` é "letra grande", `<h2>` 
+  é "letra média" e assim por diante. Isso está incorreto.
+- A Realidade: As tags de título (`<h1>` a `<h6>`) servem para definir a 
+  ESTRUTURA e a HIERARQUIA do seu documento. 
+- Analogia do Livro/Revista:
+  * O título principal do livro é o `<h1>`.
+  * Os capítulos são `<h2>`.
+  * As subseções dentro dos capítulos são `<h3>`.
+  * Se houver sub-subseções, usa-se `<h4>`, e assim sucessivamente.
+
+2. AS REGRAS DE OURO DA HIERARQUIA
+--------------------------------------------------------------------------------
+- Níveis de Tags: Existem exatamente 6 níveis: de `<h1>` até `<h6>`. 
+  Não existe `h7`, `h8`, etc.
+- Sem Pulos de Nível: Você deve respeitar a estrutura lógica. Se você terminou 
+  um `<h2>`, o próximo subtítulo deve ser um `<h3>` (ou outro `<h2>`). Pular 
+  níveis (ex: ir de `<h1>` direto para `<h3>`) quebra a semântica do documento, 
+  o que prejudica a acessibilidade e o SEO (Google).
+- Separação de Responsabilidades:
+  * HTML: Define a IMPORTÂNCIA e a HIERARQUIA (Semântica).
+  * CSS: Define a APARÊNCIA (Tamanho da fonte, cor, alinhamento).
+  * Dica: Se um título `<h3>` está "muito pequeno" para o seu gosto, você NÃO 
+    deve trocá-lo por um `<h1>` para aumentar a letra. Você deve usar CSS 
+    para alterar o tamanho da fonte do `<h3>`.
+
+3. DICA DE PRODUTIVIDADE (LOREM IPSUM)
+--------------------------------------------------------------------------------
+- Ao testar a estrutura de hierarquia, você precisará de textos de exemplo.
+- No VS Code, em vez de digitar textos aleatórios, digite `lorem` e pressione 
+  [ENTER]. O editor gerará automaticamente um parágrafo padrão em latim (Lorem 
+  Ipsum) para você visualizar como o conteúdo fica na tela.
+
+4. RESUMO SEMÂNTICO (Exemplo de Estrutura)
+--------------------------------------------------------------------------------
+<h1>Título Principal da Página</h1>
+  <h2>Título de Seção</h2>
+    <h3>Subtítulo da Seção</h3>
+      <h4>Sub-subtítulo</h4>
+  <h2>Outro Título de Seção</h2>
+================================================================================

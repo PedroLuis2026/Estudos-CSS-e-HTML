@@ -1,0 +1,57 @@
+================================================================================
+RESUMO DE ESTUDOS - SEMÂNTICA NA HTML5 É IMPORTANTE
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O QUE É SEMÂNTICA NO HTML5?
+--------------------------------------------------------------------------------
+- Definição Literária: Semântica é o estudo do SIGNIFICADO das palavras, em 
+  oposição à sua FORMA (visual).
+- Aplicação na Web: No passado (HTML 4), as tags eram usadas para pintar cores 
+  e mudar o design. Hoje (HTML5), as tags servem EXCLUSIVAMENTE para dar 
+  SIGNIFICADO e sentido ao conteúdo (ex: dizer que um trecho é um endereço, 
+  um título, um rodapé). 
+- A Regra Atual: 
+  * HTML = Significado (Semântica) e Estrutura.
+  * CSS = Forma, Estilo, Cor e Design.
+
+2. AS TAGS E ATRIBUTOS OBSOLETOS (NÃO USE MAIS)
+--------------------------------------------------------------------------------
+Muitas tags e atributos que os professores antigos ensinavam não devem mais ser 
+utilizados, pois ferem a regra da semântica. Se o seu código tiver isso, ele é 
+considerado obsoleto pela W3C.
+
+- Atributos Obsoletos (Visuais):
+  * `bgcolor="blue"` (Usado no <body> para pintar o fundo). 
+    -> Correto agora: Usar CSS (`background-color`).
+  * `color="white"` (Usado para pintar letras). 
+    -> Correto agora: Usar CSS (`color`).
+
+- Tags Obsoletas (Focadas apenas em forma e design):
+  * `<center>`: Para centralizar textos. -> Use CSS (`text-align`).
+  * `<font>`: Para mudar a fonte. -> Use CSS (`font-family`).
+  * `<u>`: Para sublinhar palavras. -> Use CSS (`text-decoration`).
+  * `<marquee>`: Letreiros passando pela tela. -> Use CSS ou JavaScript.
+  * `<blink>`: Textos piscando.
+
+3. EXEMPLO PRÁTICO DE SEMÂNTICA (A Tag <address>)
+--------------------------------------------------------------------------------
+- O Erro Visual: Se você quer colocar o endereço físico da sua loja no site e 
+  quer que ele fique destacado (sublinhado ou itálico), colocar a tag `<i>` 
+  ou `<u>` está errado, pois isso é apenas focar no visual.
+- A Solução Semântica: O HTML5 possui a tag `<address>`.
+  * Exemplo: `<address>Rua dos Capixabas, 229 - Botafogo, RJ</address>`
+  * Por que é melhor? Quando um robô do Google (ou um smartphone) ler essa tag, 
+    ele não vai apenas mudar a letra; ele VAI ENTENDER que aquilo é um endereço. 
+    Se o usuário tocar no celular, pode abrir automaticamente o Google Maps. 
+
+4. CONSULTA E VALIDAÇÃO OFICIAL
+--------------------------------------------------------------------------------
+- Ferramenta Oficial: A internet muda constantemente. O local correto para 
+  verificar se uma tag ainda é válida ou se tornou obsoleta é no site oficial 
+  da W3C (w3.org) ou em plataformas de documentação modernas (como a MDN 
+  Web Docs).
+- Dica do VS Code: O editor frequentemente marca os atributos antigos e obsoletos 
+  (como `bgcolor`) na cor vermelha para avisar ao desenvolvedor que o código 
+  está fora dos padrões atuais.
+================================================================================

@@ -1,0 +1,59 @@
+================================================================================
+RESUMO DE ESTUDOS - O TAMANHO DAS IMAGENS IMPORTA PARA UM SITE?
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A IMPORTÂNCIA DO TAMANHO DAS IMAGENS NO DESENVOLVIMENTO WEB
+--------------------------------------------------------------------------------
+- O Impacto no Desempenho: Usar imagens "gigantes" em dimensões (ex: 3000x2000 pixels) 
+  sem redimensionar prejudica severamente a velocidade de carregamento do site.
+- Implicações no SEO (Google): Sites lentos, sobrecarregados com imagens pesadas, 
+  são punidos pelos motores de busca (Google) e perdem posições no ranqueamento, 
+  dificultando serem encontrados pelos usuários.
+- Não confie no CSS para redimensionar pesos: Você pode usar HTML/CSS para 
+  exibir uma imagem de 3000px em um "quadradinho" de 300px na tela, mas o 
+  navegador do usuário AINDA precisará fazer o download do arquivo original e pesado 
+  (ex: 2 Mega). A imagem precisa ser redimensionada ANTES de ir para o código.
+
+2. A REGRA DA RESOLUÇÃO E TAMANHO MÁXIMO
+--------------------------------------------------------------------------------
+- Tamanho Máximo Recomendado: Para preencher uma tela inteira de computador 
+  com boa qualidade, raramente é necessário ultrapassar a largura de 1500 a 
+  1920 pixels.
+- Para imagens em meio ao texto (conteúdo do site), larguras entre 400px e 
+  650px costumam ser ideais.
+- Resolução Padrão para Web: Diferente de imagens para impressão gráfica 
+  (que exigem 300 DPI), a resolução para exibições em tela (monitores, celulares) 
+  deve ficar em torno de 72 DPI (pontos por polegada). Não é necessário 
+  mais que isso, pois não há ganho visual, apenas ganho de peso inútil no arquivo.
+
+3. BOAS PRÁTICAS: O CONCEITO DA "IMAGEM FULL" E BACKUPS
+--------------------------------------------------------------------------------
+- O Fluxo de Trabalho: Quando baixar ou comprar uma imagem na internet em seu 
+  tamanho original gigantesco, NUNCA sobreescreva (salve por cima) esse 
+  arquivo original. 
+- A Regra do Backup: Nomeie o arquivo gigantesco original como 
+  `nome-da-imagem-full.jpg` e guarde-o com segurança. 
+- A partir dessa imagem `full`, você abre o editor de imagens e gera as cópias 
+  menores e mais leves, exportando-as (ex: `nome-da-imagem-650.jpg`, 
+  `nome-da-imagem-200.jpg`). Se o cliente mudar de ideia sobre o tamanho 
+  da foto no site, você ainda terá o original para gerar um novo recorte.
+
+4. REDIMENSIONANDO IMAGENS USANDO O GIMP (PRÁTICA)
+--------------------------------------------------------------------------------
+Passo a passo no software GIMP para redimensionar uma imagem sem perder a proporção:
+1. Abra a imagem no GIMP.
+2. Acesse o menu superior "Imagem" > "Redimensionar Imagem" (Scale Image).
+3. Na janela aberta, certifique-se de que o ícone de corrente (elo fechado) 
+   ao lado de Largura e Altura está ativado. Isso garante que a imagem não 
+   ficará esticada ou achatada.
+4. Digite a nova Largura desejada (ex: 650) e pressione a tecla [TAB] no 
+   teclado. O GIMP calculará automaticamente a altura exata.
+5. Em "Resolução X e Y", altere para 72.
+6. Clique no botão "Redimensionar".
+7. Para salvar o novo arquivo final, vá em "Arquivo" > "Exportar Como..." 
+   (Não utilize o "Salvar", pois isso salvaria no formato de projeto do GIMP).
+8. Nomeie o arquivo, clique em "Exportar", defina a taxa de compressão da qualidade 
+   (em JPEG, a faixa entre 60% e 80% geralmente é o equilíbrio ideal entre 
+   beleza e leveza do arquivo) e confirme.
+================================================================================
