@@ -1,0 +1,58 @@
+================================================================================
+RESUMO DE ESTUDOS - LISTAS OL E UL
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. INTRODUÇÃO ÀS LISTAS NO HTML5
+--------------------------------------------------------------------------------
+As listas são elementos fundamentais para estruturar conteúdos em sequência 
+(como receitas, cronogramas, listas de compras ou menus de navegação).
+Existem dois tipos principais abordados nesta aula:
+- Listas Ordenadas (Order List - <ol>)
+- Listas Não-Ordenadas (Unordered List - <ul>)
+
+Atenção: Os itens individuais dentro de QUALQUER uma dessas listas são criados 
+com a tag `<li>` (List Item).
+Dica: No HTML5, a tag de fechamento `</li>` é opcional, mas recomenda-se 
+mantê-la por organização e boa prática.
+
+2. LISTAS ORDENADAS (<ol>)
+--------------------------------------------------------------------------------
+- O que são: Listas onde a ordem (numeração ou letras) faz diferença no 
+  entendimento do conteúdo (ex: passos de uma receita, cronograma diário).
+- Tag mãe: `<ol>`
+- Tag filha (itens): `<li>`
+- Atributo `type=""`: Muda o estilo do marcador. As opções válidas são:
+  * `type="1"` : Números decimais (1, 2, 3...) -> É o Padrão.
+  * `type="A"` : Letras maiúsculas (A, B, C...)
+  * `type="a"` : Letras minúsculas (a, b, c...)
+  * `type="I"` : Algarismos romanos maiúsculos (I, II, III, IV...)
+  * `type="i"` : Algarismos romanos minúsculos (i, ii, iii, iv...)
+- Atributo `start=""`: Define a partir de qual número/letra a lista deve 
+  começar (ex: `start="4"` fará a lista começar no número 4 ou na letra D).
+
+Exemplo de Código:
+<ol type="A" start="3">
+    <li>Acordar</li>
+    <li>Tomar Café</li>
+    <li>Escovar os dentes</li>
+</ol>
+
+3. LISTAS NÃO-ORDENADAS (<ul>)
+--------------------------------------------------------------------------------
+- O que são: Listas onde a ordem não importa. São demarcadas apenas por 
+  pequenos símbolos (bullets), como numa lista de mercado.
+- Tag mãe: `<ul>`
+- Tag filha (itens): `<li>`
+- Atributo `type=""`: Muda o formato da "bolinha" demarcadora. Opções:
+  * `type="disc"` : Uma bolinha preta preenchida -> É o Padrão.
+  * `type="circle"` : Uma bolinha vazia (um círculo sem preenchimento).
+  * `type="square"` : Um pequeno quadrado preto.
+
+Exemplo de Código:
+<ul type="square">
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Manteiga</li>
+</ul>
+================================================================================

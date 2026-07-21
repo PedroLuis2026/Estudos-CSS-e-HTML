@@ -1,0 +1,70 @@
+================================================================================
+RESUMO DE ESTUDOS - LISTAS MISTAS E DE DEFINIÇÃO
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. ANINHAMENTO DE LISTAS (LISTAS MISTAS)
+--------------------------------------------------------------------------------
+- O que é: O HTML permite que você coloque uma lista dentro da outra. Isso é 
+  chamado de "aninhamento" (do inglês, nesting). É muito utilizado para 
+  criar sub-níveis (como categorias e subcategorias) ou menus complexos.
+- Regra de Ouro: Para colocar uma lista dentro de outra, a tag da "sub-lista" 
+  (seja ela <ol> ou <ul>) DEVE estar aninhada DENTRO de uma tag de item <li> 
+  da lista principal, ou logo após a abertura de um <li>.
+- Exemplo de Mistura (OL e UL):
+  
+  <ol>
+      <li>Linguagens Antigas
+          <ul type="square">
+              <li>Clipper</li>
+              <li>Fortran</li>
+              <li>Delphi</li>
+          </ul>
+      </li>
+      <li>Linguagens Novas
+          <ul type="square">
+              <li>PHP</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+          </ul>
+      </li>
+  </ol>
+
+  * Repare que a tag `<ul>` está dentro do fluxo do `<li>`. O navegador 
+    entende isso automaticamente e cria um deslocamento visual para a direita.
+
+2. LISTAS DE DEFINIÇÃO (DL, DT, DD)
+--------------------------------------------------------------------------------
+- O que são: Diferente das listas OL e UL que agrupam itens com bolinhas ou 
+  números, as listas de definição funcionam como um DICIONÁRIO ou glossário. 
+  Elas ligam um "Termo" a uma "Descrição".
+- Benefício em SEO (Google): Motores de busca valorizam muito o uso semântico 
+  dessas tags ao buscar respostas para perguntas do tipo "O que é [termo]?".
+
+- As 3 tags fundamentais:
+  1. `<dl>` (Definition List): É a tag "mãe", que engloba toda a lista de definição.
+  2. `<dt>` (Definition Term): É o "termo" a ser explicado. Fica alinhado à esquerda.
+  3. `<dd>` (Definition Description): É o texto que explica o termo. O navegador 
+     automaticamente adiciona um recuo para a direita para separar do termo.
+
+- Exemplo Prático:
+  
+  <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+      
+      <dt>CSS</dt>
+      <dd>Linguagem de estilo para a criação do design de um site.</dd>
+      
+      <dt>JavaScript</dt>
+      <dd>Linguagem de programação para a criação de interatividade.</dd>
+  </dl>
+
+3. DICAS DE PRODUTIVIDADE NO VS CODE
+--------------------------------------------------------------------------------
+- Seleção Múltipla com "Alt": Se você quiser alterar várias tags ao mesmo 
+  tempo (ex: trocar vários `<ol>` para `<ul>`), segure a tecla `Alt` no teclado 
+  e clique com o mouse nos diferentes pontos que deseja editar. O VS Code 
+  criará múltiplos cursores, permitindo apagar e digitar em vários lugares 
+  simultaneamente.
+================================================================================

@@ -1,0 +1,49 @@
+================================================================================
+RESUMO DE ESTUDOS - LINKS E ÂNCORAS EM HTML5
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A IMPORTÂNCIA DOS LINKS NA WEB
+--------------------------------------------------------------------------------
+- Os hiperlinks são a base da linguagem HTML e do protocolo HTTP. 
+  Eles conectam documentos e permitem a navegação pela internet.
+- SEO (Search Engine Optimization): Motores de busca, como o Google, usam os 
+  links para rastrear, indexar e entender a relevância de um site na rede.
+
+2. A TAG DE ÂNCORA (<a>)
+--------------------------------------------------------------------------------
+- A tag responsável por criar um link no HTML é a tag `<a>` (Anchor/Âncora).
+- Ela necessita obrigatoriamente do atributo `href` (Hypertext Reference), que 
+  indica o destino para onde o usuário será levado ao clicar no texto.
+- Sintaxe Básica: `<a href="URL_DE_DESTINO">Texto Clicável</a>`
+
+3. LINKS EXTERNOS E O ATRIBUTO "HREF"
+--------------------------------------------------------------------------------
+- O que é um link externo: É aquele que aponta para um site ou domínio 
+  diferente do seu (ex: do seu site pessoal para o YouTube ou GitHub).
+- Para links externos, o atributo `href` deve conter a URL completa e absoluta, 
+  incluindo o protocolo.
+- Exemplo: `<a href="https://www.youtube.com">Acesse o YouTube</a>`
+
+4. REGRAS DE OURO PARA LINKS EXTERNOS (TARGET E REL)
+--------------------------------------------------------------------------------
+Se você direcionar o usuário para outro site sem configurações adicionais, a 
+página de destino substituirá o seu site na mesma aba, e o usuário 
+provavelmente não voltará. Para evitar isso, usa-se dois atributos muito 
+importantes em links externos:
+
+- Atributo `target="_blank"`
+  * O que faz: Força o navegador a abrir o link em uma nova aba (ou janela) 
+    em branco. 
+  * Importante: Lembre-se de colocar o underline (`_`) antes de `blank` e 
+    nunca deixar espaços.
+
+- Atributo `rel="external"`
+  * O que faz: Informa semanticamente ao navegador e aos motores de busca que 
+    o destino não faz parte da mesma estrutura do site atual.
+  
+- Sintaxe Completa e Recomendada para Links Externos:
+  <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">
+      Repositório Público do GitHub
+  </a>
+================================================================================
