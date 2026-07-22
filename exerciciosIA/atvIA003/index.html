@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Portifólio em HTML</h1>
+    <hr>
+    <h2><abbr title="Análise e Desenvolviment de Sistemas">ADS</abbr></h2>
+    <p>Eu possuo uma lógica de programaçao refinada, junto com o conhecimento avançado em python, MySQL e conhecimentos básicos de HTML5 e CSS3, logo abaixo irei mostrar um código demonstrativo em python.</p>
+
+    <code><pre>
+import os
+os.system("cls" if os.name == "nt" else "clear")
+
+from time import sleep
+
+from colorama import Fore, init
+init(autoreset=True)
+
+while True:
+os.system("cls" if os.name == "nt" else "clear")
+
+print(Fore.YELLOW + "-=-" * 12)
+print(Fore.YELLOW + "PETROS PIZZARIA ".center(36))
+print(Fore.YELLOW + "-=-" * 12)
+
+
+pedido = input("Você deseja pedir uma pizza? (S/N): ")
+if pedido not in ["S", "N", "s", "n", "Sim", "sim", "Não", "não"]:
+print(Fore.LIGHTRED_EX + "REPONDA COM SIM OU NÃO!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(1)
+continue  
+
+elif pedido in ["S", "s", "Sim", "sim"]:
+print(Fore.LIGHTGREEN_EX + "Ok, irei fazer o seu pedido!")
+print(Fore.LIGHTGREEN_EX + "Carregando cardápio...")
+sleep(3)
+break
+else:
+print(Fore.LIGHTYELLOW_EX + "Pedido cancelado.")
+exit()
+os.system("cls" if os.name == "nt" else "clear")
+
+print(Fore.YELLOW + "-=-" * 20)
+print(Fore.YELLOW + "CARDÁPIO".center(60))
+print(Fore.YELLOW + "-=-" * 20)
+
+pizza_comum = ["Mussarela", "Calabresa", "Frango com Catupiry", "Portuguesa"]
+pizza_especial = ["4 Queijos", "Camarão com Catupiry", "Especial da Casa", "Marguerita"]
+pizza_doce = ["Chocolate", "Napolitana", "Nutella", "Banana com Canela"]
+
+print(Fore.LIGHTWHITE_EX + "Pizzas Comuns".upper() + "(A)") 
+for i, pizza in enumerate(pizza_comum, start=1):
+print(Fore.LIGHTWHITE_EX + f"{i}. {pizza:<20}" + Fore.GREEN + " R$55,00" + Fore.WHITE + " G" + Fore.GREEN + " R$40,00" + Fore.WHITE + " M" + Fore.GREEN + " R$35,00" + Fore.WHITE + " P")
+print(Fore.LIGHTBLACK_EX + "Pizzas especiais".upper() + "(B)")
+for i, pizza in enumerate(pizza_especial, start=1):
+print(Fore.LIGHTBLACK_EX + f"{i}. {pizza:<20}" + Fore.GREEN + " R$90,00" + Fore.WHITE + " G" + Fore.GREEN + " R$80,00" + Fore.WHITE + " M" + Fore.GREEN + " R$70,00" + Fore.WHITE + " P")
+print(Fore.LIGHTMAGENTA_EX + "Esfirras doces".upper() + "(C)")
+for i, pizza in enumerate(pizza_doce, start=1):
+print(Fore.LIGHTMAGENTA_EX + f"{i}. {pizza:<20}" + Fore.GREEN + " R$15,00" + Fore.WHITE +" P")
+print(Fore.YELLOW + "-=-" * 20)
+while True:
+escolha = input("Qual opção você deseja (A/B/C): ")
+if escolha not in ["A", "a", "B", "b", "C", "c"]:
+print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+if escolha == "A" or escolha == "a":      
+print(Fore.LIGHTYELLOW_EX + "Você escolheu as pizzas comuns!")
+escolha = input("Qual pizza você deseja (digite entre as numerações): ")
+if escolha not in ["1", "2", "3", "4"]:
+    print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+elif escolha == "1":
+    print("Você escolheu a pizza de Mussarela!")
+    escolhaP = "Pizza de Mussarela"
+elif escolha == "2":
+    print("Você escolheu a pizza de Calabresa!")
+    escolhaP = "Pizza de Calabresa"
+elif escolha == "3":
+    print("Você escolheu a pizza de Frango com Catupiry!")
+    escolhaP = "Pizza de Frango com Catupiry"
+else:
+    print("Você escolheu a pizza de Portuguesa!")
+    escolhaP =  "Pizza de Portuguesa"
+tamanho = input("Qual o tamanho de sua pizza: (G/M/P) ")
+if tamanho not in ["G", "g", "M", "m", "P", "p"]:
+    print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+if tamanho in ["G", "g"]:
+    sub_total = 55.00
+if tamanho in ["M", "m"]:
+    sub_total = 40.00
+if tamanho in ["P", "p"]:
+    sub_total = 35.00
+print("Carregando sua pizza...")
+sleep(3)
+break
+elif escolha == "B" or escolha == "b":
+print(Fore.LIGHTBLACK_EX +"Você escolheu as pizzas especiais!")
+escolha = input("Qual pizza você deseja (digite entre as numerações): ")
+if escolha not in ["1", "2", "3", "4"]:
+    print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(1)
+    continue
+elif escolha == "1":
+    print("Você escolheu a pizza de Quatro Queijos!")
+    escolhaP = "Pizza de Quatro Queijos"
+elif escolha == "2":
+    print("Você escolheu a pizza de Camarão com Catupiry!")
+    escolhaP = "Pizza de Camarão com Catupiry"
+elif escolha == "3":
+    print("Você escolheu a pizza Especial da Casa!")
+    escolhaP = "Pizza Especial da Casa"
+else:
+    print("Você escolheu a pizza de Marguerita!")
+    escolaP = "Pizza de Marguerita"
+tamanho = input("Qual o tamanho de sua pizza: (G/M/P) ")
+if tamanho not in ["G", "g", "M", "m", "P", "p"]:
+    print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+if tamanho in ["G", "g"]:
+    sub_total = 90.00
+if tamanho in ["M", "m"]:
+    sub_total = 80.00
+if tamanho in ["P", "p"]:
+    sub_total = 70.00
+print("Carregando sua pizza...")
+sleep(3)
+break
+else:
+sub_total = 15.00
+print(Fore.LIGHTMAGENTA_EX +"Você escolheu as esfirras doces!")
+escolha = input("Qual esfirra você deseja (digite entre as numerações): ")
+if escolha not in ["1", "2", "3", "4"]:
+    print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(1)
+    continue
+elif escolha == "1":
+    print("Você escolheu a esfirra de Chocolate!")
+    escolhaP = "Esfirra de Chocolate"
+elif escolha == "2":
+    print("Você escolheu a esfirra Napolitana!")
+    escolhaP = "Esfirra de Napolitana"
+elif escolha == "3":
+    print("Você escolheu a esfirra de Nutella!")
+    escolhaP = "Esfirra de Nutella"
+else:
+    print("Você escolheu a esfirra de Banana com Canela!")
+    escolhaP = "Esfirra de Banana com Canela"
+print("Carregando sua esfirra...")
+sleep(3)
+break
+
+os.system("cls" if os.name == "nt" else "clear")
+
+print(Fore.YELLOW + "-=-" * 12)
+print(Fore.YELLOW + "INFORMAÇÕES DO CLIENTE".center(36))
+print(Fore.YELLOW + "-=-" * 12)
+while True:
+nome = input("Digite o seu nome: ").title()
+nome= nome.replace(" Da ", " da ").replace(" De ", " de ").replace(" Do ", " do ")
+if nome == "":
+print(Fore.LIGHTRED_EX + "NOME OBRIGATORIO!")
+print(Fore.LIGHTCYAN_EX + "Voltando")
+sleep(2)
+continue
+break
+while True:
+endereco = input("Digite o seu endereço: ").title() 
+endereco = endereco.replace(" De ", " de ").replace(" Da ", " da ").replace(" Do ", " do ")
+if endereco == "":
+print(Fore.LIGHTRED_EX + "ENDEREÇO OBRIGATORIO!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+break
+while True:
+try:
+telefone = input("Digite o seu telefone: ")
+telefone_real =  telefone.replace("-", " ").replace(" ", "").replace("(", "").replace(")", "")
+if not telefone_real.isdigit() or len(telefone_real) != 11:
+    print(Fore.LIGHTRED_EX + "TELEFONE INVÁLIDO!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+except ValueError:
+print(Fore.LIGHTRED_EX + "VALOR INVÁLIDO!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+break
+while True:
+try:
+km = float(input("Qual a distância do local de entrega (em km): "))
+if km <= 0:
+    print(Fore.LIGHTRED_EX + "DISTÂNCIA INVÁLIDA!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+if km > 12:
+    print(Fore.LIGHTRED_EX + "Desculpe, não entregamos para essa distância, no maximo 12km!")
+    print(Fore.LIGHTCYAN_EX + "Voltando...")
+    sleep(2)
+    continue
+except ValueError:
+print(Fore.LIGHTRED_EX + "VALOR INVÁLIDO!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+break
+while True:
+primeira_compra = input("É a sua primeira compra na Petros Pizzaria? (S/N): ")
+if primeira_compra not in ["S", "s","Sim", "sim", "N", "Não", "não", "n"]:
+print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+if primeira_compra in ["S", "s", "Sim", "sim"]:
+print(Fore.LIGHTGREEN_EX + "Parabéns! Você ganhou um desconto de 10% na sua compra!")
+desconto = 0.10
+else:
+print(Fore.LIGHTWHITE_EX + "Que pena! Você não ganhou o desconto de 10% na sua compra!")
+desconto = 0.00
+cupom_desconto = input("Você possui o cumpom de desconto ""PROMO5"": S/N: ")
+if cupom_desconto not in ["S", "s", "Sim", "sim", "N", "n", "Não", "não"]:
+print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+if cupom_desconto in ["S", "s", "Sim", "sim"] and desconto > 0:
+print(Fore.LIGHTGREEN_EX + "Você já possui 10% de desconto, os descontos não são acumulativos!")
+descontoc = 0.05
+elif cupom_desconto in ["S", "s", "Sim", "sim"]:
+print(Fore.LIGHTGREEN_EX + "Parabéns! Você ganhou um desconto de 5% na sua compra!")
+descontoc = 0.05
+else:   
+print(Fore.LIGHTWHITE_EX + "Que pena! Você não ganhou o desconto de 5% na sua compra!")
+descontoc = 0.00
+print("Carregando seu pedido...")
+sleep(2)
+break
+os.system("cls" if os.name == "nt" else "clear")
+print(Fore.YELLOW + "-=-" * 20)
+print(Fore.YELLOW + "RESUMO DO PEDIDO".center(60))
+print(Fore.YELLOW + "-=-" * 20)
+
+desconto_total = max(desconto, descontoc)
+valor_desconto = sub_total * desconto_total
+if sub_total > 15.00 and sub_total < 60.00:
+frete = 5.99
+frete_texto = frete
+elif sub_total <= 15.00:
+frete = 9.99
+frete_texto = frete 
+elif sub_total >= 60.00:
+frete = 0
+frete_texto = "Frete grátis!"
+preço_frete = sub_total + frete
+if km < 2:
+distancia = "Expresso"
+elif km < 6: 
+distancia = "Normal"
+else:
+distancia = "Agendado" 
+
+print(Fore.LIGHTWHITE_EX + f"{"Nome do cliente:":<25}{nome}")
+print(Fore.LIGHTWHITE_EX + f"{"Endereço de entrega:":<25}{endereco}")
+print(Fore.LIGHTWHITE_EX + f"{"Pedido do cliente:":<25}{escolhaP}")
+print(Fore.LIGHTWHITE_EX + f"{"Estimativa de entrega:":<25}{distancia}")
+print(Fore.LIGHTWHITE_EX + f"{"subtotal:":<25}"+ Fore.LIGHTGREEN_EX + f"R${sub_total:.2f}".replace(".", ","))
+print(Fore.LIGHTWHITE_EX + f"{"Desconto aplicado:":<25}" + Fore.LIGHTGREEN_EX + Fore.WHITE + "-" + Fore.LIGHTGREEN_EX + f"R${valor_desconto:.2f}".replace(".", ","))
+print(Fore.LIGHTWHITE_EX + f"{"Valor do frete:":<25}" + Fore.LIGHTGREEN_EX + f"{frete_texto if isinstance(frete_texto, str) else Fore.WHITE + "+" + Fore.LIGHTGREEN_EX + f"R${frete:.2f}".replace(".", ",")}")
+print(Fore.LIGHTWHITE_EX + f"{"Valor total a pagar:":<25}" + Fore.LIGHTGREEN_EX + f"R${preço_frete - valor_desconto:.2f}".replace(".", ","))
+print(Fore.YELLOW + "-=-" * 20)
+while True:
+querer_cliente = input(Fore.LIGHTCYAN_EX + "Deseja confirmar o pedido (S/N): ")
+if querer_cliente not in ["S", "s","Sim", "sim" "N", "n", "Não", "não"]:
+print(Fore.LIGHTRED_EX + "OPÇÃO INVÁLIDA!")
+print(Fore.LIGHTCYAN_EX + "Voltando...")
+sleep(2)
+continue
+elif querer_cliente in ["S", "s","Sim", "sim"]:
+print(Fore.LIGHTGREEN_EX + "Carregando sua compra...")
+sleep(2)
+break
+else:
+print(Fore.LIGHTRED_EX + "Pedido cancelado.")
+exit()
+print(Fore.YELLOW + "-=-" * 12)
+print(Fore.YELLOW + "PEDIDO CONFIRMADO".center(36))
+print(Fore.YELLOW + "-=-" * 12)
+print(Fore.LIGHTGREEN_EX + "Obrigado por comprar na Petros Pizzaria!")        
+    </pre></code>
+</body>
+</html>
