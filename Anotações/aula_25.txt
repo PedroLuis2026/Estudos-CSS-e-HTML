@@ -1,0 +1,68 @@
+================================================================================
+RESUMO DE ESTUDOS - COLOCANDO ÁUDIO NO SEU SITE
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. DIREITOS AUTORAIS E FONTES DE ÁUDIO
+--------------------------------------------------------------------------------
+- O Aviso Importante: Assim como as imagens, arquivos de áudio (músicas, efeitos 
+  sonoros) possuem direitos autorais. Se você utilizar músicas comerciais 
+  sem permissão, seu site pode ser derrubado e você pode ser processado.
+- Dica de Ouro: O professor recomenda usar a "Biblioteca de Áudio do YouTube" 
+  (dentro do YouTube Studio), que oferece músicas e efeitos sonoros gratuitos.
+- Regra de Atribuição: Fique atento ao selo "Creative Commons - Atribuição 
+  Necessária". Se a música tiver essa licença, você deve copiar os créditos 
+  do autor e colar na descrição ou rodapé do seu site.
+
+2. A TAG SIMPLES <audio> (Limitações)
+--------------------------------------------------------------------------------
+A forma mais básica de inserir um áudio no HTML5 é através da tag `audio` 
+passando o caminho (src) diretamente nela.
+- Exemplo Básico: `<audio src="midia/musica.mp3"></audio>`
+- O Problema: Essa abordagem é muito limitada, pois se o navegador do usuário 
+  não for compatível com `.mp3`, o áudio simplesmente não tocará e o usuário 
+  ficará sem alternativas.
+
+3. A TAG <audio> ROBUSTA E COMPATÍVEL (Múltiplos Formatos)
+--------------------------------------------------------------------------------
+Para garantir compatibilidade com qualquer navegador, o correto é abrir a tag 
+`<audio>` sem o parâmetro `src` e usar tags filhas `<source>` para oferecer 
+múltiplas versões do arquivo, assim como fizemos com a tag `<picture>`.
+
+- Ordem de Leitura: O navegador tenta carregar de cima para baixo.
+  1. Primeiro ele tenta o MP3.
+  2. Se não suportar, tenta o OGG.
+  3. Se não suportar, tenta o WAV.
+  4. Se não suportar NADA, exibe a mensagem de erro (Fallback).
+
+- Os Media Types Oficiais de Áudio:
+  * Formato MP3 -> `type="audio/mpeg"`
+  * Formato OGG -> `type="audio/ogg"`
+  * Formato WAV -> `type="audio/wav"` (Evite usar na web: muito pesado).
+
+Exemplo Prático e Correto:
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não suporta o áudio. 
+       <a href="midia/guanacast-33.mp3">Clique aqui para baixar</a>
+    </p>
+</audio>
+
+4. PARÂMETROS IMPORTANTES DA TAG <AUDIO>
+--------------------------------------------------------------------------------
+- `controls`: Se você não colocar isso, o play, pause e volume não aparecerão 
+  na tela. É fundamental adicionar.
+- `autoplay`: Tenta iniciar a música assim que o site carrega. (Aviso: A 
+  maioria dos navegadores modernos hoje em dia bloqueiam isso por padrão para 
+  não incomodar o usuário).
+- `loop`: Faz o áudio recomeçar automaticamente ao chegar no fim.
+- `preload`: Um dos mais importantes para SEO e desempenho.
+  * `preload="auto"`: Péssimo. Força o navegador a baixar todo o MP3 junto com 
+    o site, gastando dados do usuário e deixando a página lenta.
+  * `preload="metadata"`: (Recomendado) Baixa apenas o tamanho e a duração do 
+    arquivo para montar o Player na tela. O áudio em si só é baixado quando 
+    o usuário clica no Play.
+  * `preload="none"`: Não carrega absolutamente nada até o usuário interagir.
+================================================================================

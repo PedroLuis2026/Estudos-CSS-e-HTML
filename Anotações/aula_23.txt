@@ -1,0 +1,54 @@
+================================================================================
+RESUMO DE ESTUDOS - IMAGENS DINÂMICAS (PARTE 1)
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O CONCEITO DE IMAGENS DINÂMICAS E RESPONSIVIDADE
+--------------------------------------------------------------------------------
+- O Problema: No passado, desenvolvedores costumavam usar apenas uma única 
+  imagem de altíssima resolução no site e diminuí-la usando CSS para caber em 
+  telas menores (como celulares). O problema dessa abordagem é que a imagem 
+  continua pesada, gastando os dados móveis do usuário e prejudicando o 
+  carregamento e o SEO do site no Google.
+- A Solução Moderna: A web hoje exige "Imagens Dinâmicas" ou Responsivas. 
+  Isso significa que o navegador detectará automaticamente o tamanho da tela 
+  (celular, tablet ou TV) e carregará um arquivo físico de imagem diferente 
+  (um pequeno, um médio ou um grande) poupando tráfego e acelerando o site.
+
+2. PREPARAÇÃO DO MATERIAL (O TRABALHO DE DESIGN)
+--------------------------------------------------------------------------------
+Antes de programar no HTML5, é obrigatório preparar os arquivos físicos em 
+um editor de imagens (como Photoshop, GIMP, etc.). 
+A aula demonstra a criação de três arquivos distintos para simular a carga:
+
+  * Imagem Pequena (Para celulares):
+    - Tamanho físico: 300x300 pixels.
+    - Exemplo salvo como: `foto-p.png`
+  
+  * Imagem Média (Para tablets e notebooks pequenos):
+    - Tamanho físico: 700x700 pixels.
+    - Exemplo salvo como: `foto-m.png`
+
+  * Imagem Grande (Para monitores de mesa e TVs):
+    - Tamanho físico: 1000x1000 pixels.
+    - Exemplo salvo como: `foto-g.png`
+
+3. BOAS PRÁTICAS DE ARMAZENAMENTO E EXPORTAÇÃO
+--------------------------------------------------------------------------------
+- Organização de Pastas: Todas as imagens devem ser organizadas corretamente. 
+  A aula sugere a criação de uma subpasta chamada "imagens" dentro da pasta 
+  do exercício atual (`ex-011`).
+- Nomenclatura: Sempre salve os arquivos em letras minúsculas, sem acentos, 
+  sem espaços (use hífens ou underlines) para evitar links quebrados em 
+  servidores Linux.
+- Ferramenta: O professor utiliza e recomenda a ferramenta gratuita GIMP para 
+  aqueles que não possuem a assinatura do Adobe Photoshop.
+
+4. PRÓXIMOS PASSOS (A Tag <picture>)
+--------------------------------------------------------------------------------
+Este vídeo cobriu unicamente a base teórica e o preparo visual (crop e 
+redimensionamento). No próximo vídeo, esses três arquivos (`foto-p.png`, 
+`foto-m.png` e `foto-g.png`) serão inseridos no código HTML utilizando a tag 
+semântica `<picture>`, que será a responsável por realizar a troca 
+dinâmica de acordo com a tela do usuário.
+================================================================================

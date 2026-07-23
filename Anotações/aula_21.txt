@@ -1,0 +1,66 @@
+================================================================================
+RESUMO DE ESTUDOS - LINKS INTERNOS EM HTML5
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. O CONCEITO DE LINKS INTERNOS
+--------------------------------------------------------------------------------
+- Diferente dos links externos (que levam para outro site), os links internos 
+  são responsáveis pela NAVEGAÇÃO do seu próprio site.
+- Eles conectam as diferentes páginas (arquivos `.html`) que você mesmo 
+  criou e que estão armazenadas no mesmo servidor/projeto.
+- Ao construir a URL (`href`), você não precisa digitar `https://www...`. 
+  Basta referenciar o caminho do arquivo localmente.
+
+2. NAVEGAÇÃO ENTRE ARQUIVOS NA MESMA PASTA
+--------------------------------------------------------------------------------
+- Se você possui o arquivo `index.html` (página principal) e um arquivo 
+  secundário chamado `pag002.html` salvos dentro da mesma pasta:
+  * O link no index será: `<a href="pag002.html">Ir para página 2</a>`
+  * O link na página 2 voltando será: `<a href="index.html">Voltar</a>`
+
+3. NAVEGAÇÃO ENTRE PASTAS DIFERENTES (CAMINHOS)
+--------------------------------------------------------------------------------
+Para manter um site organizado, é comum separar as coisas em pastas (ex: 
+uma pasta chamada "noticias" guardando arquivos específicos).
+
+- Entrando em uma subpasta:
+  Se o `index.html` está na raiz e ele precisa abrir um arquivo que está dentro 
+  da pasta "noticias", o caminho deve indicar o nome da pasta e a barra `/`.
+  * Sintaxe: `<a href="noticias/pag003.html">Página de Notícias</a>`
+
+- Saindo de uma subpasta e voltando para a raiz:
+  Se você está dentro da pasta "noticias" (no arquivo `pag003.html`) e precisa 
+  fazer um link para voltar ao `index.html`, você não pode apenas digitar 
+  `href="index.html"`, pois o navegador procuraria ele dentro de "noticias".
+  * A Solução: Utilizar os comandos de navegação de diretório (Linux/DOS).
+  * O comando `../` significa: "Volte uma pasta" (suba um nível).
+  * Sintaxe: `<a href="../index.html">Voltar para a página principal</a>`
+
+4. ATRIBUTOS SEMÂNTICOS PARA LINKS INTERNOS
+--------------------------------------------------------------------------------
+Como os links são entre as suas próprias páginas, a recomendação muda:
+
+- Atributo `target`:
+  * Para links do próprio site, o recomendado é usar `target="_self"`, que 
+    abre a página na MESMA ABA que o usuário já está (ou omitir o target, já 
+    que `_self` é o padrão). Não se usa `_blank` na própria navegação para 
+    não poluir o navegador do usuário com dezenas de abas abertas.
+
+- Atributo `rel` (Relação):
+  A tag `<a rel="...">` ajuda o Google e outros robôs a entenderem a 
+  estrutura do seu site:
+  * `rel="next"`: Informa que a página de destino é a PRÓXIMA página de 
+    uma sequência ou artigo.
+  * `rel="prev"`: Informa que a página de destino é a página ANTERIOR.
+  * `rel="nofollow"`: Informa ao Google para "não seguir" aquele link ou 
+    não dar aval/autoridade de SEO a ele. (Muito útil ao colocar links 
+    patrocinados ou sites que você não se responsabiliza).
+
+5. DICA DE PRODUTIVIDADE NO VS CODE
+--------------------------------------------------------------------------------
+Ao digitar o atributo `href=""`, coloque o cursor de texto entre as aspas e 
+pressione `Ctrl + Espaço`. O VS Code abrirá um menu suspenso mostrando todos 
+os arquivos e pastas disponíveis no diretório, ajudando a evitar erros de 
+digitação no caminho (path).
+================================================================================

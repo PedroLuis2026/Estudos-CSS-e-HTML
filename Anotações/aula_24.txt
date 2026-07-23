@@ -1,0 +1,63 @@
+================================================================================
+RESUMO DE ESTUDOS - IMAGENS QUE SE ADAPTAM SOZINHAS (PARTE 2)
+Curso: HTML5 e CSS3 (Curso em Vídeo - Prof. Gustavo Guanabara)
+================================================================================
+
+1. A IMPORTÂNCIA DO UX (USER EXPERIENCE) E DO SEO
+--------------------------------------------------------------------------------
+- Barras de Rolagem Laterais: Se você colocar uma imagem grande demais na tela 
+  de um celular, o navegador vai criar uma barra de rolagem horizontal. 
+  Isso destrói a experiência do usuário (UX), fazendo-o abandonar o site.
+- Bounce Rate (Taxa de Rejeição): O Google mede o tempo e a interação das 
+  pessoas no seu site. Se alguém entra, vê um site quebrado ou pesado no celular 
+  e sai rapidamente, seu Bounce Rate sobe. O Google penaliza sites com alto 
+  Bounce Rate, rebaixando-os nos resultados de pesquisa.
+
+2. A TAG <picture> E <source>
+--------------------------------------------------------------------------------
+A tag `<picture>` funciona como um "contêiner" inteligente. Dentro dela, você 
+não coloca apenas uma imagem, mas várias opções de Fontes (`<source>`). O 
+navegador vai ler as opções e escolher a melhor imagem com base no tamanho 
+da tela atual do usuário.
+
+- A Estrutura Básica:
+  <picture>
+      <source>
+      <source>
+      <img> <!-- A tag <img> clássica continua sendo a base (Fallback) -->
+  </picture>
+
+3. CONFIGURANDO OS MEDIA QUERIES NO HTML (media="max-width")
+--------------------------------------------------------------------------------
+Dentro das tags `<source>`, usamos o atributo `media` para estipular a "regra" 
+(Media Query) de quando aquela imagem específica deve ser carregada.
+
+- O Padrão: A tag `<img>` no final do bloco serve como o padrão. Geralmente 
+  deixamos a imagem GRANDE nela.
+- A Lógica Inversa: As tags `<source>` devem ser lidas de CIMA PARA BAIXO. 
+  A regra de tela MENOR fica no topo, e as telas intermediárias vêm a seguir.
+
+Exemplo Prático (Explicado passo a passo):
+<picture>
+    <!-- Se a tela tiver NO MÁXIMO 750px de largura, carregue a foto-p -->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    
+    <!-- Se a tela tiver NO MÁXIMO 1050px de largura, carregue a foto-m -->
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    
+    <!-- Se a tela for MAIOR que 1050px, nenhuma regra acima vale. 
+         Então o navegador carrega a imagem padrão (foto-g) -->
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+4. MACETES IMPORTANTES DA AULA
+--------------------------------------------------------------------------------
+- A Folga da Barra de Rolagem: O professor ensina que não devemos colocar a 
+  medida exata do tamanho da foto no CSS (ex: 700px). Devemos somar cerca 
+  de 50px de "folga" (ex: 750px) porque a barra de rolagem vertical do 
+  navegador rouba um espaço da tela. Sem essa folga, a barra de rolagem 
+  horizontal pode aparecer indesejadamente antes do navegador trocar a foto.
+- Ordem Importa: Se você inverter a ordem das tags `<source>` (colocando a 
+  média antes da pequena), o código pode quebrar e a lógica da responsividade 
+  não funcionará. O HTML lê as regras sequencialmente de cima para baixo.
+================================================================================
